@@ -1,10 +1,12 @@
 # CP-Net Generator
 
-The CP-net Generator (GenCPnet) generates acyclic conditional preference networks (CP-nets) [2] uniformly at random with respect to a specified set. It is possible to specify parameters such as the number of nodes, bound on indegree, and the size of domains.
+The CP-net Generator (GenCPnet) generates acyclic conditional preference networks (CP-nets) uniformly at random with respect to a specified set. It is possible to specify parameters such as the number of nodes, bound on indegree, and the size of domains.
 
-GenCPnet implements the method described in our paper, “Generating CP-nets Uniformly at Random”. If you use or adapt this software, we kindly ask that you would cite our paper. GenCPnet is free software, released under the GNU Public License version 3. GenCPNet is written in C++ and designed to run on a GNU Linux system. 
+GenCPnet implements the method described in our paper, [Generating CP-nets Uniformly at Random](http://www.nickmattei.net/docs/gencp.pdf). If you use or adapt this software, we kindly ask that you would cite our paper. 
 
-This code is described in detail in our AAAI 2016 Paper, [Generating CP-nets Uniformly at Random](http://www.nickmattei.net/docs/gencp.pdf).  Please cite our paper if you use this code for academic purposes.
+GenCPnet is free software, released under the GNU Public License version 3. GenCPNet is written in C++ and designed to run on a GNU Linux system. 
+
+This code is described in detail in our AAAI 2016 Paper, [Generating CP-nets Uniformly at Random](http://www.nickmattei.net/docs/gencp.pdf).
 
 For comprehensive instructions please [see the guide](/doc/Gencpnet_guide.pdf).
 
