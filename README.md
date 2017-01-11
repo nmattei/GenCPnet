@@ -1,36 +1,35 @@
-### CP-Net Generator
+# CP-Net Generator
 
 The CP-net Generator (GenCPnet) generates acyclic conditional preference networks (CP-nets) [2] uniformly at random with respect to a specified set. It is possible to specify parameters such as the number of nodes, bound on indegree, and the size of domains.
 
 GenCPnet implements the method described in our paper, “Generating CP-nets Uniformly at Random”. If you use or adapt this software, we kindly ask that you would cite our paper. GenCPnet is free software, released under the GNU Public License version 3. GenCPNet is written in C++ and designed to run on a GNU Linux system. 
 
-This code is described in detail in our AAAI 2015 Paper, [Generating CP-nets Uniformly at Random](http://www.nickmattei.net/docs/gencp.pdf).  Please cite our paper if you use this code for academic purposes.
+This code is described in detail in our AAAI 2016 Paper, [Generating CP-nets Uniformly at Random](http://www.nickmattei.net/docs/gencp.pdf).  Please cite our paper if you use this code for academic purposes.
 
 For comprehensive instructions please [see the guide](/doc/Gencpnet_guide.pdf).
 
-### Basic Instructions
+# Basic Instructions
 
-CP-net generator (gencpnet) generates CP-nets u.a.r. parameterized by
-number of nodes, bound on indegree, and size of domains.
+CP-net generator (gencpnet) generates CP-nets uniformly at random parameterized by number of nodes, bound on indegree, and size of domains.
 
-Usage: gencpnet <OPTIONS> <DIRECTORY>
+Usage: `gencpnet <OPTIONS> <DIRECTORY>`
 
 OPTIONS (can be applied in any order):
 ```
--c             bound on indegree for all nodes (default -c 5)
---count        outputs number of CP-nets (given n, c, d) [no generation]
---countdags    outputs number of graphs (given n, c) [no generation]
--d             domain size (homogeneous for all features) (default -d 2)
--g         number of CP-nets to generate (default -g 1)
--h         Hamming distance of outcome pairs (optional and only 
-           used in conjunction with the -t option)
--i         probability that a given rule is missing (default -i 0.0)
--n             number of features/nodes
--t         also generates XML files each with a pair of outcomes for
-           dominance testing experiments (default -o 0)
---help         display this README.txt file
--V, --verbose  output generation details to standard error for debugging
---version      display version information
+-c              bound on indegree for all nodes (default -c 5)
+--count         outputs number of CP-nets (given n, c, d) [no generation]
+--countdags     outputs number of graphs (given n, c) [no generation]
+-d              domain size (homogeneous for all features) (default -d 2)
+-g              number of CP-nets to generate (default -g 1)
+-h              Hamming distance of outcome pairs (optional and only 
+                    used in conjunction with the -t option)
+-i              probability that a given rule is missing (default -i 0.0)
+-n              number of features/nodes
+-t              also generates XML files each with a pair of outcomes for
+                    dominance testing experiments (default -o 0)
+--help          display this README.txt file
+-V, --verbose   output generation details to standard error for debugging
+--version       display version information
 ```
 
 EXAMPLES:
